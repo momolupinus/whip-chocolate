@@ -19,7 +19,6 @@ body {
 
 .container {
   width: 100%;
-  padding: 0 1rem;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -58,6 +57,10 @@ body {
   color: #7b4b3a;
   letter-spacing: 0.05em;
   animation: fadeInSoft 1s ease;
+}
+
+.mv {
+  padding: 0 1rem;
 }
 
 .mv__image {
