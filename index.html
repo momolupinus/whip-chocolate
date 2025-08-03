@@ -4,91 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1>ほいっぷ & ちょこれ〜と</h1>
-        </header>
-
         <main class="main">
             <!-- メインビジュアル -->
             <section class="mv">
-                <div class="mv__image"></div>
+                <h1 class="mv__image"><img src="/assets/img/mv.png" alt="ほいっぷ&ちょこれーと"></h1>
             </section>
+
+            <!-- イベント -->
+            <section class="section event">
+                <h2 class="section__ttl section__ttl--event">〇〇イベント開催！</h2>
+                <p class="section__txt">イベント開催予定もしくは開催中の場合のみ、ここに表示する感じ。一番最初に目に入った方が良いかなと思ったのでここに配置しています。<br>イベントの内容によって、デザイン追加する想定(周りにハート置いたりとか)</p>
+                <div class="section__photo">
+                    <img src="/assets/img/photo_event_01.png" alt="">
+                </div>
+            </section>
+
+            <!-- ナビ -->
+            <nav class="nav">
+                <ul class="nav__inner">
+                    <li class="nav__list nav__list--cast"><a href="#cast"><img class="nav__list-deco nav__list-deco--cast" src="/assets/img/icon_ribon.png"><span>キャスト</span></a></li>
+                    <li class="nav__list nav__list--menu"><a href="#menu"><img class="nav__list-deco nav__list-deco--menu" src="/assets/img/icon_meal.png"><span>メニュー</span></a></li>
+                    <li class="nav__list nav__list--access"><a href="#access"><img class="nav__list-deco nav__list-deco--access" src="/assets/img/icon_map.png"><span>アクセス</span></a></li>
+                    <li class="nav__list nav__list--gallery"><a href="#gallery"><img class="nav__list-deco nav__list-deco--gallery" src="/assets/img/icon_camera.png"><span>ギャラリー</span></a></li>
+                    <li class="nav__list nav__list--rule"><a href="#rule"><img class="nav__list-deco nav__list-deco--rule" src="/assets/img/icon_heart.png"><span>ご帰宅される方へ的な</span><img class="nav__list-deco nav__list-deco--rule" src="/assets/img/icon_heart.png"></a></li>
+                </ul>
+            </nav>
 
             <!-- キャッチコピー -->
-            <section class="catchcopy">
-                <h2>おかえりなさいませ、ご主人様♡</h2>
-                <p>心を込めておもてなしいたします</p>
-            </section>
-
-            <!-- NEWS -->
-            <section class="news">
-                <h2 class="news__ttl">NEWS</h2>
-                <div class="news__list">
-                    <article class="news__item">
-                        <time class="news__item-date">2025.07.30</time>
-                        <h3 class="news__item-ttl">イベント開催しました！</h3>
-                    </article>
-                    <article class="news__item">
-                        <time class="news__item-date">2025.07.30</time>
-                        <h3 class="news__item-ttl">オープンしました！</h3>
-                    </article>
+            <section class="section catchcopy">
+                <h2 class="section__ttl section__ttl--catchcopy">おかえりなさいませ、ご主人様♡的なキャッチフレーズ</h2>
+                <p class="section__txt">ここにちょっとした説明<br>かふぇ&バー「ほいっぷ&ちょこれーと」は、ff14内で運営しているお店です<br>ララフェルが多めです的なアピール？</p>
+                <div class="section__photo">
+                    <img src="/assets/img/photo_catchcopy_01.jpg" alt="">
                 </div>
             </section>
 
             <!-- CAST -->
-            <section class="cast">
-                <h2 class="cast__ttl">CAST</h2>
+            <section id="cast" class="section cast">
+                <h2 class="section__ttl section__ttl--cast"><span class="section__ttl-deco"><img src="/assets/img/icon_ribon.png"></span><span>キャスト</span></h2>
                 <div class="cast__list">
                     <div class="cast__item">
-                        <div class="cast__item-image"></div>
-                        <h3 class="cast__item-name">ししぃ</h3>
-                        <p class="cast__item-msg">店長です！</p>
+                        <div class="cast__item-image">
+                            <img src="/assets/img/cast_ssi.jpg" alt="">
+                        </div>
                     </div>
                     <div class="cast__item">
-                        <div class="cast__item-image"></div>
-                        <h3 class="cast__item-name">ガム</h3>
-                        <p class="cast__item-msg">オムライス担当です！</p>
+                        <div class="cast__item-image">
+                            <img src="/assets/img/cast_kai.png" alt="">
+                        </div>
                     </div>
                     <div class="cast__item">
-                        <div class="cast__item-image"></div>
-                        <h3 class="cast__item-name">かい</h3>
-                        <p class="cast__item-msg">ハウジング担当です！</p>
+                        <div class="cast__item-image">
+                            <img src="/assets/img/cast_ssi.jpg" alt="">
+                        </div>
                     </div>
                     <div class="cast__item">
-                        <div class="cast__item-image"></div>
-                        <h3 class="cast__item-name">どんぐり</h3>
-                        <p class="cast__item-msg">ﾄﾞﾝｸﾞﾘｺﾛｺﾛﾄﾞﾝｸﾞﾘｺ</p>
-                    </div>
-                    <div class="cast__item">
-                        <div class="cast__item-image"></div>
-                        <h3 class="cast__item-name">もも</h3>
-                        <p class="cast__item-msg">くぽおおおおおおおおお</p>
+                        <div class="cast__item-image">
+                            <img src="/assets/img/cast_ssi.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!-- MENU -->
-            <section class="menu">
-                <h2 class="menu__ttl">MENU</h2>
+            <section id="menu" class="section menu">
+                <h2 class="section__ttl section__ttl--menu"><span class="section__ttl-deco"><img src="/assets/img/icon_meal.png"></span><span>メニュー</span></h2>
                 <div class="menu__list">
                     <div class="menu__item">
-                        <span class="menu__item-name">オムライス</span>
-                        <span class="menu__item-price">1000ギル</span>
+                        <h3 class="menu__name">おまじない付きオムライス</h3>
+                        <p class="menu__price">500 ギル</p>
+                        <div class="menu__image"><img src="/assets/img/dummy.png" alt=""></div>
+                        <p class="menu__description">ここに説明があれば記載？？ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
                     </div>
                     <div class="menu__item">
-                        <span class="menu__item-name">チェキ</span>
-                        <span class="menu__item-price">1,000,000ギル</span>
+                        <h3 class="menu__name">メイドの気まぐれめにゅー</h3>
+                        <p class="menu__price">1000 ギル</p>
+                        <div class="menu__image"><img src="/assets/img/dummy.png" alt=""></div>
+                        <p class="menu__description">ここに説明があれば記載？？ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu__name">期間限定 〇〇〇〇</h3>
+                        <p class="menu__price">500 ギル</p>
+                        <div class="menu__image"><img src="/assets/img/dummy.png" alt=""></div>
+                        <p class="menu__description">ここに説明があれば記載？？ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                    <div class="menu__item menu__item--blue">
+                        <h3 class="menu__name menu__name--blue">デコチェキ</h3>
+                        <p class="menu__price">5000 ギル</p>
+                        <div class="menu__image"><img src="/assets/img/dummy.png" alt=""></div>
+                        <p class="menu__description">ここに説明があれば記載？？ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                    </div>
+                    <div class="menu__item menu__item--blue">
+                        <h3 class="menu__name menu__name--blue">チェキくじ</h3>
+                        <p class="menu__price">2500 ギル</p>
+                        <div class="menu__image"><img src="/assets/img/dummy.png" alt=""></div>
+                        <p class="menu__description">ここに説明があれば記載？？ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
                     </div>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
-            <p>&copy; 2025</p>
+            <p>&copy; SQUARE ENIX</p>
         </footer>
     </div>
 </body>
