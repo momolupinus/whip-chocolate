@@ -87,9 +87,36 @@ body {
   width: 750px;
   margin: 0 auto;
   overflow: hidden;
-
+  position :relative;
   @include sp {
     width: 100%;
+  }
+}
+
+#btn-top{
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: solid 5px $milk;
+  position: fixed;
+  bottom: 16px;
+  right: 14px;
+  z-index: 5;
+  border-radius: 50%;
+  background-color: $milk;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.2s;
+  @include pc{
+    width: 70px;
+    height: 70px;
+    right: 20px;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  &.on{
+    opacity: 0.8;
   }
 }
 
@@ -206,10 +233,12 @@ body {
         margin: 0 8px;
       }
     }
-  
-    &:hover {
-      transform: scale(1.03);
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    
+    @include pc{
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+      }
     }
   }
   &__list-deco{
@@ -422,8 +451,10 @@ body {
       }
       a{
         text-decoration: underline;
-        &:hover{
-          color: $brown-soft;
+        @include pc{
+          &:hover{
+            color: $brown-soft;
+          }
         }
       }
       .note{
@@ -434,6 +465,10 @@ body {
       }
     }
   }
+}
+
+.gallery{
+  background-color: $milk;
 }
 
 .rule{

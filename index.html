@@ -251,7 +251,31 @@
         <footer class="footer">
             <p>&copy; SQUARE ENIX</p>
         </footer>
+
+        <button id="btn-top"><img src="/assets/img/btn-top.png"></button>
     </div>
+
+    <script>
+    const backToTopBtn = document.getElementById("btn-top");
+
+    // スクロールしたらボタンを表示／非表示
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        console.log("on")
+        backToTopBtn.classList.add("on");
+      } else {
+        backToTopBtn.classList.remove("on");
+      }
+    });
+
+    // クリックしたらトップへスムーズにスクロール
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
